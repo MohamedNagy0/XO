@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Scripto" />
+    <meta name="description" content="This website made with love" />
+    <!--! Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scripto</title>
+    <link rel="icon" href="./img/icons/code-solid (1).svg" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main
+      class="vh-100 d-flex flex-column flex-md-row justify-content-center align-items-center gap-5 p-5"
+    >
+      <div class="container">
+        <div class="score-box fs-4">
+          <div
+            class="first-player d-flex flex-column gy-2 justify-content-center align-items-center position-relative"
+          >
+            <span class="playerOne w-100 text-center">
+              <span></span>Player X</span
+            >
+            <i
+              class="fa-solid fa-circle fa-beat-fade start-0 position-absolute xReadyIcon d-none"
+            ></i>
+            <span><span class="firstPlayerScore score">0</span> / 3</span>
+          </div>
+          <div
+            class="first-player d-flex flex-column position-relative gy-2 justify-content-center align-items-center"
+          >
+            <div class="line"></div>
+
+            <span class="score text-center">
+              <span class="secondPlayerScore">0</span> / 3</span
+            >
+            <span class="PlayerTow w-100 text-center">
+              <span></span>Player O</span
+            >
+            <i
+              class="fa-solid fa-circle fa-beat-fade start-0 position-absolute oReadyIcon d-none"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <div
+            class="col-4 border-top-0 d-flex justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 border-top-0 d-flex justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 border-top-0 border-end-0 d-flex justify-content-center align-items-center display-1"
+          ></div>
+        </div>
+        <div class="row">
+          <div
+            class="col-4 d-flex justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 d-flex justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 border-end-0 d-flex justify-content-center align-items-center display-1"
+          ></div>
+        </div>
+        <div class="row">
+          <div
+            class="col-4 d-flex border-bottom-0 justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 d-flex border-bottom-0 justify-content-center align-items-center display-1"
+          ></div>
+          <div
+            class="col-4 border-end-0 border-bottom-0 d-flex justify-content-center align-items-center display-1"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="winner-card w-75 bg-white d-none flex-column justify-content-center align-items-center shadow-lg rounded-5 d-flex position-absolute top-50 start-50 translate-middle"
+      >
+        <p class="text-center fs-1">
+          <span class="winner-name"></span>
+        </p>
+        <button class="my-btn rounded-3" type="button">
+          Next Round
+          <i class="fa-solid fa-khanda text-success"></i>
+        </button>
+        <audio class="yalaBena" src="./audio/YalaBena.MP3"></audio>
+        <audio class="WinnerAudio" src="./audio/WinnerAudio.MP3"></audio>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
