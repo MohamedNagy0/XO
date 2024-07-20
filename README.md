@@ -23,5 +23,6 @@ Welcome to the XO Game! This is a fun and interactive game created using HTML, C
 - **JavaScript**
 - **Bootstrap**
 
-•	Live Demo: xo-roan.vercel.app/
+•	Live Demo: [xo-roan.vercel.app/](https://xo-roan.vercel.app/)
+
 Have fun playing and may the best player win!
